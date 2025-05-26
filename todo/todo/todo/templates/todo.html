@@ -1,0 +1,27 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="{% static 'signup.css'%}">
+</head>
+<body>
+    <div class="container">
+        <div class="small_container">
+          <div div class="form">
+            <form method="post">
+                {% csrf_token %}
+                <input type="text" placeholder="add today task" name='title'>
+                <input type="submit"  value="add task">
+            </form>
+        </div>
+            <div class="field">
+                <b>already have an account?</b>
+                <br>
+                <a href="/login" class="log_in">login</a>
+        </div>
+    </div>
+</body>
+</html>

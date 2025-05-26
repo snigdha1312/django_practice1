@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(8, 8, 56);
+}
+.small_container{
+border: 2px solid white;
+height: 60vh;
+margin-top: 10vh;
+width: 300px;
+color: white;
+
+
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+.log_in{
+    color: aliceblue;
+}
